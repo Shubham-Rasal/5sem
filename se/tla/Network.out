@@ -2,129 +2,101 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 27 and seed 4734781124945161533 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory [pid: 7480] (Windows 10 10.0 amd64, Oracle Corporation 18.0.1.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 49 and seed -171801618657763181 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_381 x86_64, MSBDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
 Parsing file D:\coding\cprograms\DSA Practice\college\5sem\se\tla\Network.tla
+Parsing file C:\Users\shubham\AppData\Local\Temp\Integers.tla
 Parsing file C:\Users\shubham\AppData\Local\Temp\Naturals.tla
-Parsing file C:\Users\shubham\AppData\Local\Temp\Sequences.tla
-Parsing file C:\Users\shubham\AppData\Local\Temp\TLC.tla
-Parsing file C:\Users\shubham\AppData\Local\Temp\FiniteSets.tla
 Semantic processing of module Naturals
-Semantic processing of module Sequences
-Semantic processing of module FiniteSets
-Semantic processing of module TLC
+Semantic processing of module Integers
 Semantic processing of module Network
 @!@!@STARTMSG 2219:0 @!@!@
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-09-05 19:15:40)
+Starting... (2023-10-25 12:02:27)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-09-05 19:15:40.
+Finished computing initial states: 1 distinct state generated at 2023-10-25 12:02:28.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 5.4E-20
+  calculated (optimistic):  val = 1.1E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-09-05 19:15:40
+The coverage statistics at 2023-10-25 12:02:28
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 9, col 1 to line 9, col 4 of module Network>: 1:1
+<Init line 8, col 1 to line 8, col 4 of module Network>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 10, col 3 to line 14, col 28 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<SelfHealingProperty line 42, col 1 to line 42, col 19 of module Network>: 0:0
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 43, col 3 to line 49, col 57 of module Network: 1
+  line 9, col 5 to line 11, col 30 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<NetworkRecovery line 16, col 1 to line 16, col 15 of module Network>: 0:0
+<ServerFailure line 14, col 1 to line 14, col 13 of module Network>: 1:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 17, col 3 to line 20, col 38 of module Network: 1
+  line 15, col 8 to line 15, col 28 of module Network: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 15, col 8 to line 15, col 17 of module Network: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 8 to line 16, col 30 of module Network: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 17, col 8 to line 17, col 31 of module Network: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 18, col 8 to line 18, col 30 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<MainLinkRecovery line 22, col 1 to line 22, col 16 of module Network>: 0:1
+<ServerRecovery line 21, col 1 to line 21, col 14 of module Network>: 0:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 23, col 6 to line 23, col 26 of module Network: 2
+  line 22, col 8 to line 22, col 29 of module Network: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 23, col 6 to line 23, col 18 of module Network: 1
+  |line 22, col 8 to line 22, col 17 of module Network: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 23, col 22 to line 23, col 26 of module Network: 1
+  line 23, col 8 to line 23, col 30 of module Network: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 24, col 6 to line 24, col 30 of module Network: 2
+  |line 23, col 8 to line 23, col 19 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 24, col 6 to line 24, col 19 of module Network: 1
+  line 24, col 8 to line 24, col 29 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 25, col 6 to line 25, col 32 of module Network: 2
+  line 25, col 8 to line 25, col 32 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 25, col 6 to line 25, col 21 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 26, col 6 to line 26, col 28 of module Network: 2
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 26, col 6 to line 26, col 19 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 27, col 6 to line 27, col 30 of module Network: 2
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 27, col 6 to line 27, col 19 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 29, col 6 to line 32, col 33 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 33, col 6 to line 36, col 43 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 33, col 7 to line 33, col 31 of module Network: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 34, col 10 to line 34, col 36 of module Network: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 35, col 10 to line 35, col 37 of module Network: 0
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 36, col 10 to line 36, col 43 of module Network: 0
+  line 26, col 8 to line 26, col 31 of module Network: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(1) at 2023-09-05 19:15:40: 2 states generated (105 s/min), 1 distinct states found (52 ds/min), 0 states left on queue.
+Progress(2) at 2023-10-25 12:02:28: 3 states generated (220 s/min), 2 distinct states found (146 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-2 states generated, 1 distinct states found, 0 states left on queue.
+3 states generated, 2 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 1.
+The depth of the complete state graph search is 2.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 0 and the 95th percentile is 0).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1145ms at (2023-09-05 19:15:40)
+Finished in 828ms at (2023-10-25 12:02:28)
 @!@!@ENDMSG 2186 @!@!@

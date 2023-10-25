@@ -1,0 +1,142 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 75 and seed -3248437788882259876 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory [pid: 5220] (Windows 10 10.0 amd64, Oracle Corporation 18.0.1.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\coding\cprograms\DSA Practice\college\5sem\se\tla\SelfHealingFileReplication.tla
+Parsing file C:\Users\shubham\AppData\Local\Temp\Naturals.tla
+Parsing file C:\Users\shubham\AppData\Local\Temp\TLC.tla
+Parsing file C:\Users\shubham\AppData\Local\Temp\Sequences.tla
+Parsing file C:\Users\shubham\AppData\Local\Temp\FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module SelfHealingFileReplication
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-09-11 11:46:18)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-09-11 11:46:18.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 4.2E-16
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-09-11 11:46:18
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<INITIAL_PREDICATE line 10, col 1 to line 10, col 17 of module SelfHealingFileReplication>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 11, col 3 to line 12, col 55 of module SelfHealingFileReplication: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<PrimaryFailure line 15, col 1 to line 15, col 14 of module SelfHealingFileReplication>: 16:32
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 6 to line 16, col 29 of module SelfHealingFileReplication: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 16, col 6 to line 16, col 18 of module SelfHealingFileReplication: 48
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 17, col 6 to line 17, col 31 of module SelfHealingFileReplication: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 18, col 6 to line 18, col 58 of module SelfHealingFileReplication: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<PrimaryRecovery line 20, col 1 to line 20, col 15 of module SelfHealingFileReplication>: 0:16
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 6 to line 21, col 30 of module SelfHealingFileReplication: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 21, col 6 to line 21, col 18 of module SelfHealingFileReplication: 48
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 6 to line 22, col 31 of module SelfHealingFileReplication: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 22, col 6 to line 22, col 20 of module SelfHealingFileReplication: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 6 to line 23, col 30 of module SelfHealingFileReplication: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 24, col 6 to line 24, col 59 of module SelfHealingFileReplication: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BackupFailure line 27, col 1 to line 27, col 16 of module SelfHealingFileReplication>: 0:80
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 28, col 6 to line 28, col 31 of module SelfHealingFileReplication: 320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 28, col 6 to line 28, col 20 of module SelfHealingFileReplication: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 29, col 6 to line 29, col 29 of module SelfHealingFileReplication: 208
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 29, col 6 to line 29, col 18 of module SelfHealingFileReplication: 128
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 6 to line 30, col 59 of module SelfHealingFileReplication: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 6 to line 31, col 30 of module SelfHealingFileReplication: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BackupRecovery line 33, col 1 to line 33, col 17 of module SelfHealingFileReplication>: 31:80
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 6 to line 34, col 32 of module SelfHealingFileReplication: 320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 34, col 6 to line 34, col 20 of module SelfHealingFileReplication: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 35, col 6 to line 35, col 29 of module SelfHealingFileReplication: 192
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 35, col 6 to line 35, col 18 of module SelfHealingFileReplication: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 36, col 6 to line 36, col 30 of module SelfHealingFileReplication: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 37, col 6 to line 37, col 58 of module SelfHealingFileReplication: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(6) at 2023-09-11 11:46:18: 209 states generated (13,556 s/min), 48 distinct states found (3,113 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+209 states generated, 48 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 6.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 6 and the 95th percentile is 4).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 942ms at (2023-09-11 11:46:18)
+@!@!@ENDMSG 2186 @!@!@

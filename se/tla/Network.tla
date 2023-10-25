@@ -1,57 +1,43 @@
------------------------------- MODULE Network ------------------------------
+------------------- MODULE Network -------------------
 
-EXTENDS Naturals, Sequences , TLC
+EXTENDS Integers
 
-CONSTANT NetworkStatus, FaultDetected
+VARIABLES LiveServer, BackupServer, FailureDetected
 
-VARIABLES MainLinkStatus, BackupLinkStatus, RecoveryAction
-
+\* Initialize the system with the live server online, the backup server offline, and no failure detected
 Init ==
-  /\ NetworkStatus \in {"Online", "Offline"}
-  /\ FaultDetected = FALSE
-  /\ MainLinkStatus = "Online"
-  /\ BackupLinkStatus = "Online"
-  /\ RecoveryAction = "None"
+    /\ LiveServer = "Online"
+    /\ BackupServer = "Offline"
+    /\ FailureDetected = FALSE
 
-NetworkRecovery ==
-  /\ FaultDetected = TRUE
-  /\ MainLinkStatus = "Offline"
-  /\ BackupLinkStatus = "Online"
-  /\ RecoveryAction = "SwitchToBackup"
+\* Simulate a server failure
+ServerFailure ==
+    /\ LiveServer = "Online"
+    /\ LiveServer' = "Offline"
+    /\ BackupServer' = "Online"
+    /\ FailureDetected' = TRUE
 
-MainLinkRecovery ==
-  /\ FaultDetected = FALSE
-  /\ MainLinkStatus = "Online"
-  /\ BackupLinkStatus = "Online"
-  /\ RecoveryAction = "None"
-  /\ NetworkStatus' = "Online"
+\* Simulate a server recovery
+ServerRecovery ==
+    /\ LiveServer = "Offline"
+    /\ BackupServer = "Online"
+    /\ LiveServer' = "Online"
+    /\ BackupServer' = "Offline"
+    /\ FailureDetected' = FALSE
 
-  /\ (NetworkStatus = "Online") =>
-      /\ MainLinkStatus' = "Online"
-      /\ BackupLinkStatus' = "Online"
-      /\ RecoveryAction' = "None"
-  /\ (NetworkStatus = "Offline") =>
-      /\ MainLinkStatus' = "Offline"
-      /\ BackupLinkStatus' = "Online"
-      /\ RecoveryAction' = "SwitchToBackup"
-
+\* System behavior
 Next ==
-  \/ NetworkRecovery
-  \/ MainLinkRecovery
+    \/ ServerFailure  \* Live server failure
+    \/ ServerRecovery  \* Live server recovery
 
-SelfHealingProperty ==
-  /\ NetworkStatus \in {"Online", "Offline"}
-  /\ IF NetworkStatus = "Online"
-       THEN (MainLinkStatus = "Online") /\ (BackupLinkStatus = "Online")
-       ELSE (MainLinkStatus = "Offline") /\ (BackupLinkStatus = "Online")
-  /\ RecoveryAction \in {"None", "SwitchToBackup"}
-  /\ (FaultDetected = TRUE) => (RecoveryAction = "SwitchToBackup")
-  /\ (FaultDetected = FALSE) => (RecoveryAction = "None")
+\* Safety Property: If a failure is detected, the backup server should be online
+SafetyProperty ==
+    /\ FailureDetected => (BackupServer = "Online")
 
-
+\* The main specification
 Spec ==
-  /\ Init
-  /\ [][Next]_<<NetworkStatus, FaultDetected, MainLinkStatus, BackupLinkStatus, RecoveryAction>>
-  /\ SelfHealingProperty
+    /\ Init
+    /\ [][Next]_<<LiveServer, BackupServer, FailureDetected>>
+    /\ WF_ <<LiveServer, BackupServer, FailureDetected>> (Next)
 
 =============================================================================

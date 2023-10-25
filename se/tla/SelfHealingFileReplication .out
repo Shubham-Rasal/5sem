@@ -1,0 +1,33 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 16 and seed 7212182143617460853 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory [pid: 7140] (Windows 10 10.0 amd64, Oracle Corporation 18.0.1.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\coding\cprograms\DSA Practice\college\5sem\se\tla\SelfHealingFileReplication .tla
+
+Fatal errors while parsing TLA+ spec in file SelfHealingFileReplication 
+
+tla2sany.semantic.AbortException
+*** Abort messages: 1
+
+Unknown location
+
+File name 'SelfHealingFileReplication ' does not match the name 'SelfHealingFileReplication' of the top level module it contains.
+
+
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-09-07 12:10:13)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 3002:1 @!@!@
+Parsing or semantic analysis failed.
+@!@!@ENDMSG 3002 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 634ms at (2023-09-07 12:10:13)
+@!@!@ENDMSG 2186 @!@!@

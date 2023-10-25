@@ -1,0 +1,44 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 35 and seed 5790427329853412656 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_381 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\coding\cprograms\DSA Practice\college\5sem\se\tla\BackupReliability.tla
+***Parse Error***
+
+  Precedence conflict between ops \leq in block line 19, col 10 to line 19, col 11 of module BackupReliability and \leq.
+
+Residual stack trace follows:
+ExtendableExpr starting at line 19, column 13.
+ExtendableExpr starting at line 19, column 8.
+Expression starting at line 19, column 8.
+Junction Item starting at line 19, column 5.
+AND-OR Junction starting at line 19, column 5.
+
+
+Fatal errors while parsing TLA+ spec in file BackupReliability
+
+tla2sany.semantic.AbortException
+*** Abort messages: 1
+
+In module BackupReliability
+
+Could not parse module BackupReliability from file BackupReliability.tla
+
+
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-10-25 11:58:08)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 3002:1 @!@!@
+Parsing or semantic analysis failed.
+@!@!@ENDMSG 3002 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 400ms at (2023-10-25 11:58:08)
+@!@!@ENDMSG 2186 @!@!@
