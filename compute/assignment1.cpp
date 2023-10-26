@@ -4,11 +4,15 @@
 #include <stdlib.h>
 #include <vector>
 #include <iostream>
+#include <fstream> // Include the necessary header for file handling
 
 using namespace std;
 
 int main()
 {
+    // Create and open a log file
+    ofstream logFile("matrix_multiplication_log.txt");
+
     // Variables to store time values
     struct timeval TimeValue_Start;
     struct timezone TimeZone_Start;
@@ -32,7 +36,6 @@ int main()
 
         while (true)
         {
-
             cout << "N = " << N << endl;
 
             vector<vector<int>> A(N, vector<int>(N));
@@ -61,7 +64,7 @@ int main()
             time_start = TimeValue_Start.tv_sec * 1000000 + TimeValue_Start.tv_usec;
             time_end = TimeValue_Final.tv_sec * 1000000 + TimeValue_Final.tv_usec;
             serial_time_overhead = (time_end - time_start) / 1000000.0;
-            printf("-\tTime in Seconds (T) : %lf\n", serial_time_overhead);
+            printf("-\t Serial : %lf\n", serial_time_overhead);
 
             // Parallel execution
             gettimeofday(&TimeValue_Start, &TimeZone_Start);
@@ -81,7 +84,10 @@ int main()
             time_start = TimeValue_Start.tv_sec * 1000000 + TimeValue_Start.tv_usec;
             time_end = TimeValue_Final.tv_sec * 1000000 + TimeValue_Final.tv_usec;
             parallel_time_overhead = (time_end - time_start) / 1000000.0;
-            printf("\n\tTime in Seconds (T) : %lf\n", parallel_time_overhead);
+            printf("\t Parallel : %lf\n", parallel_time_overhead);
+
+            // Log the results to the file
+            logFile << "Thread Count: " << thread_count << ", Matrix Size N: " << N << ", Serial Time: " << serial_time_overhead << ", Parallel Time: " << parallel_time_overhead << endl;
 
             if (parallel_time_overhead < serial_time_overhead)
             {
@@ -92,6 +98,9 @@ int main()
 
         thread_count++;
     }
+
+    // Close the log file
+    logFile.close();
 
     return 0;
 }
