@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 77 and seed -3847902956552742145 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_381 x86_64, MSBDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 88 and seed 5575692009366960847 with 1 worker on 12 cores with 1673MB heap and 64MB offheap memory (Windows 10 10.0 amd64, Oracle Corporation 1.8.0_381 x86_64, MSBDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -21,13 +21,13 @@ Semantic processing of module FireAlarmSystem
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-10-26 12:41:00)
+Starting... (2023-10-31 16:17:18)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-10-26 12:41:01.
+Finished computing initial states: 1 distinct state generated at 2023-10-31 16:17:19.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
@@ -36,7 +36,7 @@ Model checking completed. No error has been found.
   calculated (optimistic):  val = 1.1E-13
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-10-26 12:41:01
+The coverage statistics at 2023-10-31 16:17:19
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
 <Init line 10, col 1 to line 10, col 4 of module FireAlarmSystem>: 1:1
@@ -45,58 +45,58 @@ The coverage statistics at 2023-10-26 12:41:01
   line 11, col 5 to line 17, col 36 of module FireAlarmSystem: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Next line 51, col 1 to line 51, col 4 of module FireAlarmSystem>: 127:16384
+<Next line 47, col 1 to line 47, col 4 of module FireAlarmSystem>: 127:16384
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 28, col 8 to line 28, col 37 of module FireAlarmSystem: 256
+  line 25, col 8 to line 25, col 37 of module FireAlarmSystem: 256
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 28, col 24 to line 28, col 37 of module FireAlarmSystem: 128:384
+  |line 25, col 24 to line 25, col 37 of module FireAlarmSystem: 128:384
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 23, col 8 to line 23, col 45 of module FireAlarmSystem: 512
+  line 20, col 8 to line 20, col 45 of module FireAlarmSystem: 512
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 23, col 32 to line 23, col 45 of module FireAlarmSystem: 256:768
+  |line 20, col 32 to line 20, col 45 of module FireAlarmSystem: 256:768
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 24, col 8 to line 24, col 48 of module FireAlarmSystem: 1024
+  line 21, col 8 to line 21, col 48 of module FireAlarmSystem: 1024
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 24, col 35 to line 24, col 48 of module FireAlarmSystem: 512:1536
+  |line 21, col 35 to line 21, col 48 of module FireAlarmSystem: 512:1536
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 25, col 8 to line 25, col 48 of module FireAlarmSystem: 2048
+  line 22, col 8 to line 22, col 48 of module FireAlarmSystem: 2048
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 25, col 35 to line 25, col 48 of module FireAlarmSystem: 1024:3072
+  |line 22, col 35 to line 22, col 48 of module FireAlarmSystem: 1024:3072
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 32, col 8 to line 32, col 38 of module FireAlarmSystem: 4096
+  line 29, col 8 to line 29, col 38 of module FireAlarmSystem: 4096
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 32, col 25 to line 32, col 38 of module FireAlarmSystem: 2048:6144
+  |line 29, col 25 to line 29, col 38 of module FireAlarmSystem: 2048:6144
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 35, col 8 to line 35, col 37 of module FireAlarmSystem: 8192
+  line 32, col 8 to line 32, col 37 of module FireAlarmSystem: 8192
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 35, col 24 to line 35, col 37 of module FireAlarmSystem: 4096:12288
+  |line 32, col 24 to line 32, col 37 of module FireAlarmSystem: 4096:12288
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 36, col 8 to line 36, col 19 of module FireAlarmSystem: 8192
+  line 33, col 8 to line 33, col 19 of module FireAlarmSystem: 8192
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 40, col 8 to line 40, col 38 of module FireAlarmSystem: 16384
+  line 37, col 8 to line 37, col 38 of module FireAlarmSystem: 16384
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 40, col 25 to line 40, col 38 of module FireAlarmSystem: 8192:24576
+  |line 37, col 25 to line 37, col 38 of module FireAlarmSystem: 8192:24576
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(2) at 2023-10-26 12:41:01: 16,385 states generated (852,645 s/min), 128 distinct states found (6,660 ds/min), 0 states left on queue.
+Progress(2) at 2023-10-31 16:17:19: 16,385 states generated (840,256 s/min), 128 distinct states found (6,564 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 16385 states generated, 128 distinct states found, 0 states left on queue.
@@ -108,5 +108,5 @@ The depth of the complete state graph search is 2.
 The average outdegree of the complete state graph is 0 (minimum is 0, the maximum 31 and the 95th percentile is 0).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1161ms at (2023-10-26 12:41:01)
+Finished in 1178ms at (2023-10-31 16:17:19)
 @!@!@ENDMSG 2186 @!@!@

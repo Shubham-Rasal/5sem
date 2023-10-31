@@ -2,9 +2,9 @@
 
 EXTENDS TLC
 
+
 VARIABLES Pump1Fault , Valve1Fault, Pump2Fault, Valve2Fault,
 OffSightPowerFault , DieselGenerator1Fault, DieselGenerator2Fault
-
 
 \* Initialize the system with all components in a working state, and no fire detected
 Init == 
@@ -15,9 +15,6 @@ Init ==
     /\ OffSightPowerFault = FALSE
     /\ DieselGenerator1Fault = FALSE
     /\ DieselGenerator2Fault = FALSE
-
-    
-    
 
 PowerFailure ==
     \/ OffSightPowerFault' \in {TRUE , FALSE}
@@ -47,14 +44,12 @@ Nozzle2Failure ==
     /\ Pump2Failure
     /\ Valve2Failure
 
-
 Next == 
    /\ Nozzle1Failure
-    /\ Nozzle2Failure
-
+   /\ Nozzle2Failure
+  
 
 Vars == <<Pump1Fault, Valve1Fault, Pump2Fault, Valve2Fault, OffSightPowerFault, DieselGenerator1Fault , DieselGenerator2Fault>>
-
 
 Spec == 
     /\ Init
