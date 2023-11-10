@@ -1,10 +1,11 @@
+
 ------------------- MODULE FireAlarmSystem -------------------
 
 EXTENDS TLC
 
-
 VARIABLES Pump1Fault , Valve1Fault, Pump2Fault, Valve2Fault,
-OffSightPowerFault , DieselGenerator1Fault, DieselGenerator2Fault
+OffSightPowerFault , DieselGenerator1Fault
+
 
 \* Initialize the system with all components in a working state, and no fire detected
 Init == 
@@ -13,13 +14,12 @@ Init ==
     /\ Pump2Fault = FALSE
     /\ Valve2Fault = FALSE
     /\ OffSightPowerFault = FALSE
-    /\ DieselGenerator1Fault = FALSE
-    /\ DieselGenerator2Fault = FALSE
+    /\ DieselGenerator1Fault = FALSE    
+    
 
 PowerFailure ==
     \/ OffSightPowerFault' \in {TRUE , FALSE}
     /\ DieselGenerator1Fault' \in {TRUE , FALSE}
-    /\ DieselGenerator2Fault' \in {TRUE , FALSE}
 
 Pump1Failure == 
     /\ Pump1Fault' \in {TRUE , FALSE}
@@ -44,12 +44,14 @@ Nozzle2Failure ==
     /\ Pump2Failure
     /\ Valve2Failure
 
+
 Next == 
    /\ Nozzle1Failure
-   /\ Nozzle2Failure
-  
+    /\ Nozzle2Failure
 
-Vars == <<Pump1Fault, Valve1Fault, Pump2Fault, Valve2Fault, OffSightPowerFault, DieselGenerator1Fault , DieselGenerator2Fault>>
+
+Vars == <<Pump1Fault, Valve1Fault, Pump2Fault, Valve2Fault, OffSightPowerFault, DieselGenerator1Fault>>
+
 
 Spec == 
     /\ Init
