@@ -1,0 +1,17 @@
+Model Name : FireAlarmSystem
+Owner : SHARPE Project Group
+Date Created : Wed Oct 25 15:07:29 IST 2023
+Comment : 
+
+CommentEnd
+
+SubModel : FireAlarmSystem
+Type : Fault tree Model
+
+SubModel : base
+Type : Fault tree Model
+
+SubModel : withextragenerator
+Type : Fault tree Model
+
+

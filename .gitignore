@@ -1,1 +1,4 @@
 states
+*.tif
+_MACOSX
+*.png
