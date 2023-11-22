@@ -1,0 +1,906 @@
+Type: Fault Tree
+
+SubModel:
+Name: withextragenerator
+Submodels Calling: []
+Number Gate And: 7
+Number Gate Or: 5
+Number Gate KofN: 0
+Number Event: 38
+
+Top Event:
+Name: Failure
+Description: null
+X, Y: 1050,30
+BottomGate: or0
+
+Event:
+Name: ev2
+Description: null
+X, Y: 1210,118
+TopConnector: conn4
+TopGate: or0
+typeEvent: basic
+Name Label: FireDept
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1208,132
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev0
+Description: null
+X, Y: 818,175
+TopConnector: conn7
+TopGate: or1
+typeEvent: basic
+Name Label: Tank
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 816,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev3
+Description: null
+X, Y: 868,175
+TopConnector: conn8
+TopGate: or1
+typeEvent: basic
+Name Label: Vavle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 866,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev5
+Description: null
+X, Y: 968,175
+TopConnector: conn10
+TopGate: or1
+typeEvent: basic
+Name Label: Vavle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 966,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev6
+Description: null
+X, Y: 1018,175
+TopConnector: conn11
+TopGate: or1
+typeEvent: basic
+Name Label: Nozzle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1016,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev1
+Description: null
+X, Y: 1060,175
+TopConnector: conn14
+TopGate: or2
+typeEvent: basic
+Name Label: Tank
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1058,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev7
+Description: null
+X, Y: 1110,175
+TopConnector: conn15
+TopGate: or2
+typeEvent: basic
+Name Label: Vavle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1108,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev9
+Description: null
+X, Y: 1210,175
+TopConnector: conn17
+TopGate: or2
+typeEvent: basic
+Name Label: Vavle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1208,189
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev10
+Description: null
+X, Y: 1260,175
+TopConnector: conn18
+TopGate: or2
+typeEvent: basic
+Name Label: Nozzle
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1254,189
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev13
+Description: null
+X, Y: 992,289
+TopConnector: conn35
+TopGate: and1
+typeEvent: basic
+Name Label: OSP
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 986,303
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev14
+Description: null
+X, Y: 1234,289
+TopConnector: conn39
+TopGate: and2
+typeEvent: basic
+Name Label: OSP
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1228,303
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev17
+Description: null
+X, Y: 869,232
+TopConnector: conn52
+TopGate: or3
+typeEvent: basic
+Name Label: Pump
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 865,248
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev4
+Description: null
+X, Y: 1111,232
+TopConnector: conn53
+TopGate: or4
+typeEvent: basic
+Name Label: Pump
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1111,248
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev8
+Description: null
+X, Y: 917,346
+TopConnector: conn56
+TopGate: and5
+typeEvent: basic
+Name Label: DieselGenerator
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 917,362
+Width, Height: 25,19
+Textwidth: 0
+
+Event:
+Name: ev11
+Description: null
+X, Y: 967,346
+TopConnector: conn57
+TopGate: and5
+typeEvent: basic
+Name Label: DieselGenerator
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 963,362
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev12
+Description: null
+X, Y: 1159,346
+TopConnector: conn60
+TopGate: and6
+typeEvent: basic
+Name Label: DieselGenerator
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1155,362
+Width, Height: 32,19
+Textwidth: 0
+
+Event:
+Name: ev15
+Description: null
+X, Y: 1209,346
+TopConnector: conn61
+TopGate: and6
+typeEvent: basic
+Name Label: DieselGenerator
+Color: java.awt.Color[r=255,g=200,b=0]
+Hierarchy: null
+Value Hierarchy: []
+Event label:
+X, Y: 1205,362
+Width, Height: 32,19
+Textwidth: 0
+
+Gate:
+Name: or0
+Description:     
+X, Y: 1055,61
+TopConnector: conn0
+BottomConnector: conn1
+typeObject: Or
+Parent: Top
+vChildren: [or1, or2, ev2]
+valK: 0
+Gate label:
+X, Y: 1055,81
+Width, Height: 24,19
+Textwidth: 0
+
+Gate:
+Name: or1
+Description:     
+X, Y: 909,118
+TopConnector: conn5
+BottomConnector: conn6
+typeObject: Or
+Parent: or0
+vChildren: [ev0, ev3, or3, ev5, ev6]
+valK: 0
+Gate label:
+X, Y: 917,138
+Width, Height: 24,19
+Textwidth: 0
+
+Gate:
+Name: or2
+Description:     
+X, Y: 1151,118
+TopConnector: conn12
+BottomConnector: conn13
+typeObject: Or
+Parent: or0
+vChildren: [ev1, ev7, or4, ev9, ev10]
+valK: 0
+Gate label:
+X, Y: 1159,138
+Width, Height: 24,19
+Textwidth: 0
+
+Gate:
+Name: or3
+Description:     
+X, Y: 909,175
+TopConnector: conn19
+BottomConnector: conn20
+typeObject: Or
+Parent: or1
+vChildren: [ev17, and1]
+valK: 0
+Gate label:
+X, Y: 909,195
+Width, Height: 24,19
+Textwidth: 0
+
+Gate:
+Name: or4
+Description:     
+X, Y: 1151,175
+TopConnector: conn28
+BottomConnector: conn29
+typeObject: Or
+Parent: or2
+vChildren: [ev4, and2]
+valK: 0
+Gate label:
+X, Y: 1151,195
+Width, Height: 24,19
+Textwidth: 0
+
+Gate:
+Name: and1
+Description:     
+X, Y: 958,232
+TopConnector: conn32
+BottomConnector: conn33
+typeObject: And
+Parent: or3
+vChildren: [and5, ev13]
+valK: 0
+Gate label:
+X, Y: 961,241
+Width, Height: 32,19
+Textwidth: 0
+
+Gate:
+Name: and2
+Description:     
+X, Y: 1200,232
+TopConnector: conn36
+BottomConnector: conn37
+typeObject: And
+Parent: or4
+vChildren: [and6, ev14]
+valK: 0
+Gate label:
+X, Y: 1203,241
+Width, Height: 32,19
+Textwidth: 0
+
+Gate:
+Name: and5
+Description: null
+X, Y: 933,289
+TopConnector: conn54
+BottomConnector: conn55
+typeObject: And
+Parent: and1
+vChildren: [ev8, ev11]
+valK: 0
+Gate label:
+X, Y: 936,298
+Width, Height: 32,19
+Textwidth: 0
+
+Gate:
+Name: and6
+Description: null
+X, Y: 1175,289
+TopConnector: conn58
+BottomConnector: conn59
+typeObject: And
+Parent: and2
+vChildren: [ev12, ev15]
+valK: 0
+Gate label:
+X, Y: 1178,298
+Width, Height: 32,19
+Textwidth: 0
+
+Component:
+Name:OSP
+Type compo:basic
+Event list:[ev14, ev13]
+Distribution:0
+Val0:0.00011
+Val1:null
+Val2:null
+
+Component:
+Name:Tank
+Type compo:basic
+Event list:[ev0, ev1]
+Distribution:0
+Val0:0.00001
+Val1:null
+Val2:null
+
+Component:
+Name:Pump
+Type compo:basic
+Event list:[ev4, ev8, ev15, ev16, ev4, ev15, ev8, ev16, ev17, ev4]
+Distribution:0
+Val0:0.017
+Val1:null
+Val2:null
+
+Component:
+Name:DieselGenerator
+Type compo:basic
+Event list:[ev11, ev12, ev15, ev16, ev8, ev11, ev12, ev15]
+Distribution:0
+Val0:0.055
+Val1:null
+Val2:null
+
+Component:
+Name:Nozzle
+Type compo:basic
+Event list:[ev6, ev10]
+Distribution:0
+Val0:0.00001
+Val1:null
+Val2:null
+
+Component:
+Name:FireDept
+Type compo:basic
+Event list:[ev2]
+Distribution:0
+Val0:0.0001
+Val1:null
+Val2:null
+
+Component:
+Name:Vavle
+Type compo:basic
+Event list:[ev3, ev5, ev7, ev9]
+Distribution:0
+Val0:0.0042
+Val1:null
+Val2:null
+
+Level:
+vLevel:[[or0], [or1, or2, ev2], [ev0, ev3, or3, ev5, ev6, ev1, ev7, or4, ev9, ev10], [ev17, and1, ev4, and2], [and5, ev13, and6, ev14], [ev8, ev11, ev12, ev15]]
+
+Connector & Line:
+Number of connectors already created:62
+Number of lines already created:86
+
+Connector:
+Name:conn0
+Number of lines:1
+Name:line0
+X1, Y1:1072,45
+X2, Y2:1072,61
+
+Connector:
+Name:conn1
+Number of lines:3
+Name:line1
+X1, Y1:1066,81
+X2, Y2:1066,102
+Name:line2
+X1, Y1:1078,81
+X2, Y2:1078,102
+Name:line3
+X1, Y1:926,102
+X2, Y2:1218,102
+
+Connector:
+Name:conn4
+Number of lines:1
+Name:line6
+X1, Y1:1218,102
+X2, Y2:1218,118
+
+Connector:
+Name:conn5
+Number of lines:1
+Name:line7
+X1, Y1:926,102
+X2, Y2:926,118
+
+Connector:
+Name:conn6
+Number of lines:3
+Name:line8
+X1, Y1:920,138
+X2, Y2:920,159
+Name:line9
+X1, Y1:932,138
+X2, Y2:932,159
+Name:line10
+X1, Y1:826,159
+X2, Y2:1026,159
+
+Connector:
+Name:conn7
+Number of lines:1
+Name:line11
+X1, Y1:826,159
+X2, Y2:826,175
+
+Connector:
+Name:conn8
+Number of lines:1
+Name:line12
+X1, Y1:876,159
+X2, Y2:876,175
+
+Connector:
+Name:conn10
+Number of lines:1
+Name:line14
+X1, Y1:976,159
+X2, Y2:976,175
+
+Connector:
+Name:conn11
+Number of lines:1
+Name:line15
+X1, Y1:1026,159
+X2, Y2:1026,175
+
+Connector:
+Name:conn12
+Number of lines:1
+Name:line16
+X1, Y1:1168,102
+X2, Y2:1168,118
+
+Connector:
+Name:conn13
+Number of lines:3
+Name:line17
+X1, Y1:1162,138
+X2, Y2:1162,159
+Name:line18
+X1, Y1:1174,138
+X2, Y2:1174,159
+Name:line19
+X1, Y1:1068,159
+X2, Y2:1268,159
+
+Connector:
+Name:conn14
+Number of lines:1
+Name:line20
+X1, Y1:1068,159
+X2, Y2:1068,175
+
+Connector:
+Name:conn15
+Number of lines:1
+Name:line21
+X1, Y1:1118,159
+X2, Y2:1118,175
+
+Connector:
+Name:conn17
+Number of lines:1
+Name:line23
+X1, Y1:1218,159
+X2, Y2:1218,175
+
+Connector:
+Name:conn18
+Number of lines:1
+Name:line24
+X1, Y1:1268,159
+X2, Y2:1268,175
+
+Connector:
+Name:conn19
+Number of lines:1
+Name:line25
+X1, Y1:926,159
+X2, Y2:926,175
+
+Connector:
+Name:conn20
+Number of lines:3
+Name:line26
+X1, Y1:920,195
+X2, Y2:920,216
+Name:line27
+X1, Y1:932,195
+X2, Y2:932,216
+Name:line28
+X1, Y1:877,216
+X2, Y2:975,216
+
+Connector:
+Name:conn28
+Number of lines:1
+Name:line38
+X1, Y1:1168,159
+X2, Y2:1168,175
+
+Connector:
+Name:conn29
+Number of lines:3
+Name:line39
+X1, Y1:1162,195
+X2, Y2:1162,216
+Name:line40
+X1, Y1:1174,195
+X2, Y2:1174,216
+Name:line41
+X1, Y1:1119,216
+X2, Y2:1217,216
+
+Connector:
+Name:conn32
+Number of lines:1
+Name:line44
+X1, Y1:975,216
+X2, Y2:975,232
+
+Connector:
+Name:conn33
+Number of lines:3
+Name:line45
+X1, Y1:969,257
+X2, Y2:969,273
+Name:line46
+X1, Y1:981,257
+X2, Y2:981,273
+Name:line47
+X1, Y1:950,273
+X2, Y2:1000,273
+
+Connector:
+Name:conn35
+Number of lines:1
+Name:line49
+X1, Y1:1000,273
+X2, Y2:1000,289
+
+Connector:
+Name:conn36
+Number of lines:1
+Name:line50
+X1, Y1:1217,216
+X2, Y2:1217,232
+
+Connector:
+Name:conn37
+Number of lines:3
+Name:line51
+X1, Y1:1211,257
+X2, Y2:1211,273
+Name:line52
+X1, Y1:1223,257
+X2, Y2:1223,273
+Name:line53
+X1, Y1:1192,273
+X2, Y2:1242,273
+
+Connector:
+Name:conn39
+Number of lines:1
+Name:line55
+X1, Y1:1242,273
+X2, Y2:1242,289
+
+Connector:
+Name:conn52
+Number of lines:1
+Name:line72
+X1, Y1:877,216
+X2, Y2:877,232
+
+Connector:
+Name:conn53
+Number of lines:1
+Name:line73
+X1, Y1:1119,216
+X2, Y2:1119,232
+
+Connector:
+Name:conn54
+Number of lines:1
+Name:line74
+X1, Y1:950,273
+X2, Y2:950,289
+
+Connector:
+Name:conn55
+Number of lines:3
+Name:line75
+X1, Y1:944,314
+X2, Y2:944,330
+Name:line76
+X1, Y1:956,314
+X2, Y2:956,330
+Name:line77
+X1, Y1:925,330
+X2, Y2:975,330
+
+Connector:
+Name:conn56
+Number of lines:1
+Name:line78
+X1, Y1:925,330
+X2, Y2:925,346
+
+Connector:
+Name:conn57
+Number of lines:1
+Name:line79
+X1, Y1:975,330
+X2, Y2:975,346
+
+Connector:
+Name:conn58
+Number of lines:1
+Name:line80
+X1, Y1:1192,273
+X2, Y2:1192,289
+
+Connector:
+Name:conn59
+Number of lines:3
+Name:line81
+X1, Y1:1186,314
+X2, Y2:1186,330
+Name:line82
+X1, Y1:1198,314
+X2, Y2:1198,330
+Name:line83
+X1, Y1:1167,330
+X2, Y2:1217,330
+
+Connector:
+Name:conn60
+Number of lines:1
+Name:line84
+X1, Y1:1167,330
+X2, Y2:1167,346
+
+Connector:
+Name:conn61
+Number of lines:1
+Name:line85
+X1, Y1:1217,330
+X2, Y2:1217,346
+
+Structure:
+Name: ev0
+Type Structure: event
+
+Structure:
+Name: or4
+Type Structure: gate
+
+Structure:
+Name: or3
+Type Structure: gate
+
+Structure:
+Name: or2
+Type Structure: gate
+
+Structure:
+Name: or1
+Type Structure: gate
+
+Structure:
+Name: and6
+Type Structure: gate
+
+Structure:
+Name: or0
+Type Structure: gate
+
+Structure:
+Name: and5
+Type Structure: gate
+
+Structure:
+Name: and2
+Type Structure: gate
+
+Structure:
+Name: and1
+Type Structure: gate
+
+Structure:
+Name: ev17
+Type Structure: event
+
+Structure:
+Name: ev9
+Type Structure: event
+
+Structure:
+Name: ev8
+Type Structure: event
+
+Structure:
+Name: ev15
+Type Structure: event
+
+Structure:
+Name: ev7
+Type Structure: event
+
+Structure:
+Name: ev14
+Type Structure: event
+
+Structure:
+Name: ev6
+Type Structure: event
+
+Structure:
+Name: ev5
+Type Structure: event
+
+Structure:
+Name: ev13
+Type Structure: event
+
+Structure:
+Name: ev12
+Type Structure: event
+
+Structure:
+Name: ev4
+Type Structure: event
+
+Structure:
+Name: ev11
+Type Structure: event
+
+Structure:
+Name: ev3
+Type Structure: event
+
+Structure:
+Name: ev2
+Type Structure: event
+
+Structure:
+Name: ev10
+Type Structure: event
+
+Structure:
+Name: ev1
+Type Structure: event
+
+
+
+Output:
+Outputs created: 2
+Output name: Reliability
+Time: 0,100,1
+Grid values: 0
+Output name: Mean time to failure (MTTF)
+Time: null
+Grid values: 0
